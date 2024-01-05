@@ -56,15 +56,13 @@ function App() {
     console.log(cart);
     setCart([...cart, { ...data, quantity: 1 }]);
   };
-  const handleShow=(value)=>{
-setShowCart(value)
-  }
+  const handleShow = (value) => {
+    setShowCart(value);
+  };
   return (
     <div>
-      <Header count={cart.length} 
-      handleShow={handleShow} />
-      {
-        showCart ? (
+      <Header count={cart.length} handleShow={handleShow} />
+      {showCart ? (
         <CartList cart={cart}></CartList>
       ) : (
         <ProductList product={product} addToCart={addToCart}></ProductList>
