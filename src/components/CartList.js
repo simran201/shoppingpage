@@ -7,22 +7,18 @@ const CartList = ({cart}) => {
       {
       cart.map((cartItem, cartIndex) => {
         return (
-          <div className="p-3">
-            <img src={cartItem.url} width={40} height={40} className="mr-2"/>
+          <div className="p-4">
+            <img src={cartItem.url} width={40} height={40} className="m-2"/>
             <span>{cartItem.name}</span>
-            <button>-</button>
-            <span>{cartItem.quantity}</span>
-            <button>+</button>
+            <button className="p-2 m-2 btn-cart">-</button>
+            <span className="m-2">{cartItem.quantity}</span>
+            <button className="p-2 m-2 btn-cart">+</button>
 
-            <span>rs. {cartItem.price}/-</span>
+            <span>Rs. {cartItem.price}/-</span>
           </div>
         );
       })}
-      {/* <p>
-        {
-            cart.map(item=>item.price).reduce()
-        }
-      </p> */}
+
     </div>
   );
 };

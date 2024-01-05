@@ -4,9 +4,26 @@
 
 .shopping-cart{
     background-color: rgb(211, 181, 160);
+    cursor: pointer;
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    border: 0.2px solid transparent;
+    color: rgb(104, 94, 94);
+
+    background-color: rgb(211, 181, 160);
+
+}
+
+.btn-cart{
+    padding: 2px;
+    font-size: 20px;
 }
